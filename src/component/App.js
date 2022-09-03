@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./component/Header";
-import Footer from "./component/Footer";
-import Main from "./component/Main";
-import HornedBeast from "./component/HornedBeast";
+import Header from "./Header";
+import Footer from "./Footer";
+import Main from "./Main";
+
 
 class App extends React.Component{
   render(){
@@ -11,7 +11,6 @@ class App extends React.Component{
         <Header />
         <Main />
         <Footer />
-        <HornedBeast />
       </div>
     )
 
