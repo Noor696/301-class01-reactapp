@@ -1,20 +1,20 @@
 import React from "react";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 class HornedBeast extends React.Component{
     render(){
         return(
-            <div>
-                <h2> {this.props.title} </h2>
-                <p> {this.props.description} </p>
-                <img src={this.props.imageUrl} alt= "images" title= {this.props.title}/> 
-                <style jsx >
-                    {`
-                    img {
-                        width:500px;
-                        height:350px;
-                    }`}
-                </style>
-            </div>
+        <Card style={{ width: '18rem' }}>
+            <Card.Img variant="top" src={this.props.imageUrl} />
+            <Card.Body>
+              <Card.Title>{this.props.title}</Card.Title>
+              <Card.Text>
+              🦄 {this.props.description}
+              </Card.Text>
+              <Button variant="primary">Go somewhere</Button>
+            </Card.Body>
+        </Card>
 
         )
     }
